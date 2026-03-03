@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>RenderBudgetBenchmarks.RenderBudgetBench-20260303-082354</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.15.8, Windows 11 (10.0.26200.7922/25H2/2025Update/HudsonValley2)
+11th Gen Intel Core i5-11400F 2.60GHz (Max: 2.59GHz), 1 CPU, 12 logical and 6 physical cores
+.NET SDK 10.0.102
+  [Host] : .NET 8.0.24 (8.0.24, 8.0.2426.7010), X64 RyuJIT x86-64-v4
+</code></pre>
+<pre><code>Toolchain=InProcessEmitToolchain  
+</code></pre>
+
+<table>
+<thead><tr><th>Method                      </th><th>ItemCount</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Median</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>&#39;OptimizeFrame (greedy only)&#39;</td><td>1000</td><td>6.488 &mu;s</td><td>0.1412 &mu;s</td><td>0.4164 &mu;s</td><td>6.275 &mu;s</td><td>-</td>
+</tr><tr><td>&#39;OptimizeFrame (greedy + improve)&#39;</td><td>1000</td><td>6.373 &mu;s</td><td>0.0431 &mu;s</td><td>0.0382 &mu;s</td><td>6.354 &mu;s</td><td>-</td>
+</tr><tr><td>&#39;OptimizeFrame (greedy only)&#39;</td><td>5000</td><td>32.584 &mu;s</td><td>0.6255 &mu;s</td><td>0.7910 &mu;s</td><td>32.289 &mu;s</td><td>-</td>
+</tr><tr><td>&#39;OptimizeFrame (greedy + improve)&#39;</td><td>5000</td><td>31.868 &mu;s</td><td>0.3757 &mu;s</td><td>0.3137 &mu;s</td><td>31.692 &mu;s</td><td>-</td>
+</tr><tr><td>&#39;OptimizeFrame (greedy only)&#39;</td><td>10000</td><td>83.906 &mu;s</td><td>0.8202 &mu;s</td><td>0.7271 &mu;s</td><td>83.788 &mu;s</td><td>-</td>
+</tr><tr><td>&#39;OptimizeFrame (greedy + improve)&#39;</td><td>10000</td><td>83.622 &mu;s</td><td>0.3939 &mu;s</td><td>0.3492 &mu;s</td><td>83.647 &mu;s</td><td>-</td>
+</tr></tbody></table>
+</body>
+</html>
