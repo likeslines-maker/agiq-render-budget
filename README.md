@@ -175,8 +175,7 @@ A:It’s a fast global budget optimizer designed for real-time use. It aims for 
 Q:Does it allocate memory each frame?
 A:No. After warm-up,per-frame calls are designed to be zero-allocation.
 
-Q:Unity/IL2CPP?
-A:The package targets netstandard2.1 + net8.0. Unity support depends on your Unity version and scripting runtime.
+
 
 ---
 
