@@ -161,7 +161,7 @@ This is commercial software.
 Individual (1 developer):$100 / year
 Studio / Large developer:$500 / year
 
-Contact:support@agiq.tech
+Contact:vipvodu@yandex.ru
 
 See LICENSE.txt for terms.
 
